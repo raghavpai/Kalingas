@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Online – Kalingas Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="branding">
+        <img src="images/new-logo.png" alt="Kalingas logo" class="logo" />
+        <span class="tagline">The Taste of Odisha</span>
+      </div>
+      <div class="contact-number">Contact: 080‑42038180</div>
+      <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav>
+        <!-- Close button appears on mobile to close the drawer -->
+        <button class="close-nav" aria-label="Close navigation">&times;</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html">Order&nbsp;Online</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" style="background-image: url('images/kheer-2.jpg');">
+    <div class="hero-content">
+      <h2>Order Online</h2>
+      <p>Delicious Odia meals delivered to your doorstep</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="grid grid-2">
+      <div>
+        <h3>Contact Information</h3>
+        <p><strong>Kalingas Restaurant</strong><br />
+          #399, 16th Main, II Stage<br />
+          BTM Layout, Bangalore‑560076
+        </p>
+        <p><strong>Phone:</strong> 080‑42038180<br />
+           <strong>Email:</strong> <a href="mailto:info@kaligas.in">info@kaligas.in</a>
+        </p>
+        <p>We deliver free within a 2 km radius.  For larger orders or catering, please contact us by phone or email.</p>
+      </div>
+      <div>
+        <h3>Place Your Order</h3>
+        <form>
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="E‑mail" required />
+          <input type="tel" name="mobile" placeholder="Mobile" required />
+          <textarea name="address" placeholder="Delivery address" rows="3" required></textarea>
+          <input type="text" name="landmark" placeholder="Landmark (optional)" />
+          <select name="menu-item" required>
+            <option value="" disabled selected>Select a menu item</option>
+            <option value="thali">Kalingas Thali</option>
+            <option value="maachha">Maachha‑Besara</option>
+            <option value="kashaa">Kashaa‑Maansha</option>
+            <option value="paneer">Paneer Butter Masala</option>
+            <option value="rabidi">Rabidi</option>
+            <option value="snack">Dahi Bara Alu Dum</option>
+          </select>
+          <input type="text" name="addon" placeholder="Add on (optional)" />
+          <button type="submit">Submit Order</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kalingas Restaurant. All rights reserved.</p>
+  </footer>
+
+  <!-- Mobile navigation script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleBtn = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav');
+      if (toggleBtn && nav) {
+        toggleBtn.addEventListener('click', function() {
+          nav.classList.toggle('open');
+        });
+        // Close the drawer when a navigation link is clicked
+        nav.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            nav.classList.remove('open');
+          });
+        });
+        // Close button inside the drawer
+        const closeBtn = document.querySelector('.close-nav');
+        if (closeBtn) {
+          closeBtn.addEventListener('click', function() {
+            nav.classList.remove('open');
+          });
+        }
+      }
+    });
+  </script>
+</body>
+</html>

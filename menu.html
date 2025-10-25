@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu – Kalingas Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="branding">
+        <img src="images/new-logo.png" alt="Kalingas logo" class="logo" />
+        <span class="tagline">The Taste of Odisha</span>
+      </div>
+      <div class="contact-number">Contact: 080‑42038180</div>
+      <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav>
+        <!-- Close button appears on mobile to close the drawer -->
+        <button class="close-nav" aria-label="Close navigation">&times;</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html">Order&nbsp;Online</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" style="background-image: url('images/banner/banner-2.jpg');">
+    <div class="hero-content">
+      <h2>Our Menu</h2>
+      <p>A feast of flavours awaits you</p>
+    </div>
+  </section>
+
+  <section>
+    <h3>Browse by Category</h3>
+    <div class="tabs">
+      <div class="tab active" data-tab="sweets">Sweets</div>
+      <div class="tab" data-tab="breakfast">Breakfast</div>
+      <div class="tab" data-tab="veg">Veg Main Course</div>
+      <div class="tab" data-tab="nonveg">Non‑Veg Main Course</div>
+      <div class="tab" data-tab="snacks">Snacks</div>
+      <div class="tab" data-tab="dry">Dry Snacks</div>
+    </div>
+
+    <!-- Sweets -->
+    <div class="tab-content active" id="sweets">
+      <table class="menu-table">
+        <thead>
+          <tr><th>Dessert</th><th>Price (₹)</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Chhena Poda</td><td>40</td><td></td></tr>
+          <tr><td>Rabidi</td><td>45</td><td></td></tr>
+          <tr><td>Ras Malai</td><td>40</td><td></td></tr>
+          <tr><td>Boondi</td><td>25</td><td></td></tr>
+          <tr><td>Rajbhog</td><td>35</td><td></td></tr>
+          <tr><td>Rasagola</td><td>17</td><td></td></tr>
+          <tr><td>Malai Chamcham</td><td>17</td><td>Also on Sat &amp; Sun</td></tr>
+          <tr><td>Chhena Gaja</td><td>17</td><td></td></tr>
+          <tr><td>Gulab Jamoon</td><td>17</td><td></td></tr>
+          <tr><td>Kala Jamoon</td><td>17</td><td></td></tr>
+          <tr><td>Kheer Kadam</td><td>17</td><td></td></tr>
+          <tr><td>Laddoo</td><td>17</td><td></td></tr>
+          <tr><td>Khira Gaja</td><td>17</td><td></td></tr>
+          <tr><td>Tadia</td><td>17</td><td></td></tr>
+          <tr><td>Malai Puri</td><td>22</td><td></td></tr>
+          <tr><td>Jalebi</td><td>6</td><td></td></tr>
+          <tr><td>Steam Cake</td><td>45</td><td>Sat &amp; Sun only</td></tr>
+          <tr><td>Rasabali</td><td>40</td><td>Sat &amp; Sun only</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Breakfast -->
+    <div class="tab-content" id="breakfast">
+      <table class="menu-table">
+        <thead><tr><th>Breakfast Item</th><th>Price (₹)</th></tr></thead>
+        <tbody>
+          <tr><td>Idli Ghuguni</td><td>30</td></tr>
+          <tr><td>Upma Ghuguni</td><td>30</td></tr>
+          <tr><td>Puri (3 pcs) Ghuguni</td><td>35</td></tr>
+          <tr><td>Puri Aludum</td><td>40</td></tr>
+          <tr><td>Bara Ghuguni</td><td>25</td></tr>
+          <tr><td>Alu Chop Ghuguni</td><td>25</td></tr>
+          <tr><td>Singeda Ghuguni</td><td>30</td></tr>
+          <tr><td>Alu Paratha with Curd</td><td>40</td></tr>
+          <tr><td>Bread Omelet</td><td>40</td></tr>
+        </tbody>
+      </table>
+      <p><em>Breakfast is served from 8 AM–12 PM.</em></p>
+    </div>
+
+    <!-- Veg -->
+    <div class="tab-content" id="veg">
+      <table class="menu-table">
+        <thead><tr><th>Veg Dish</th><th>Price (₹)</th><th>Availability</th></tr></thead>
+        <tbody>
+          <tr><td>Dal Fry</td><td>55</td><td>Daily</td></tr>
+          <tr><td>Dal Tadka</td><td>50</td><td>Daily</td></tr>
+          <tr><td>Alu Baigana Bharta</td><td>45</td><td>Daily</td></tr>
+          <tr><td>Bhaja</td><td>45</td><td>Daily</td></tr>
+          <tr><td>Badi Chura</td><td>35</td><td>Daily</td></tr>
+          <tr><td>Alu Kalara Chips</td><td>45</td><td>Wed–Sun (Lunch)</td></tr>
+          <tr><td>Dahi Baigana</td><td>45</td><td>Daily</td></tr>
+          <tr><td>Saga Bhaja</td><td>45</td><td>Sat (Lunch)</td></tr>
+          <tr><td>Alu Gobi Masala</td><td>55</td><td>Daily</td></tr>
+          <tr><td>Alu Potala Rasa/Kasa</td><td>70</td><td>Mon, Thu &amp; Sat</td></tr>
+          <tr><td>Chhatu Rai</td><td>80</td><td>Daily</td></tr>
+          <tr><td>Nadia Bara Tarkari</td><td>80</td><td>Mon (Dinner)</td></tr>
+          <tr><td>Bhindi Alu Besara</td><td>60</td><td>Tue</td></tr>
+          <tr><td>Santula</td><td>55</td><td>Tue (Dinner)</td></tr>
+          <tr><td>Mixed Veg Curry</td><td>55</td><td>Wed</td></tr>
+          <tr><td>Chhena Tarkari</td><td>100</td><td>Thu (Dinner)</td></tr>
+          <tr><td>Janhi Alu Posta</td><td>60</td><td>Fri</td></tr>
+          <tr><td>Ghanta Tarkari</td><td>60</td><td>Sat (Dinner)</td></tr>
+          <tr><td>Chhuin Alu Badi Besara</td><td>60</td><td>Sun</td></tr>
+          <tr><td>Chilli Gobi</td><td>80</td><td>Daily</td></tr>
+          <tr><td>Chilli Mushroom</td><td>90</td><td>Daily</td></tr>
+          <tr><td>Chilli Paneer</td><td>110</td><td>Daily</td></tr>
+          <tr><td>Chana Masala</td><td>70</td><td>Daily</td></tr>
+          <tr><td>Rajma Masala</td><td>70</td><td>Daily</td></tr>
+          <tr><td>Matar Paneer</td><td>110</td><td>Daily</td></tr>
+          <tr><td>Kadai Paneer</td><td>110</td><td>Daily</td></tr>
+          <tr><td>Palak Paneer</td><td>110</td><td>Daily</td></tr>
+          <tr><td>Paneer Butter Masala</td><td>110</td><td>Daily</td></tr>
+          <tr><td>Shahi Paneer</td><td>120</td><td>Daily</td></tr>
+          <tr><td>Mushroom Masala</td><td>90</td><td>Daily</td></tr>
+          <tr><td>Kadai Mushroom</td><td>90</td><td>Daily</td></tr>
+          <tr><td>Bhindi Masala</td><td>70</td><td>Daily</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Non-Veg -->
+    <div class="tab-content" id="nonveg">
+      <table class="menu-table">
+        <thead><tr><th>Non‑Veg Dish</th><th>Price (₹)</th></tr></thead>
+        <tbody>
+          <tr><td>Omelet</td><td>35</td></tr>
+          <tr><td>Egg Bhurji</td><td>35</td></tr>
+          <tr><td>Egg Dal Tadka</td><td>70</td></tr>
+          <tr><td>Egg Masala</td><td>60</td></tr>
+          <tr><td>Fish Fry</td><td>60</td></tr>
+          <tr><td>Fish Curry/Besara</td><td>70</td></tr>
+          <tr><td>Golden Fried Prawns</td><td>110</td></tr>
+          <tr><td>Prawns Masala</td><td>135</td></tr>
+          <tr><td>Chicken Kassa Masala</td><td>115</td></tr>
+          <tr><td>Dahi Chicken</td><td>125</td></tr>
+          <tr><td>Chicken Korma</td><td>145</td></tr>
+          <tr><td>Chicken Dopyaza</td><td>125</td></tr>
+          <tr><td>Kadai Chicken</td><td>125</td></tr>
+          <tr><td>Chicken Kalimirch</td><td>125</td></tr>
+          <tr><td>Chicken Butter Masala</td><td>135</td></tr>
+          <tr><td>Chilli Chicken</td><td>110</td></tr>
+          <tr><td>Pepper Chicken</td><td>110</td></tr>
+          <tr><td>Chicken Kabab</td><td>110</td></tr>
+          <tr><td>Mutton Kassa Masala</td><td>170</td></tr>
+          <tr><td>Kadai Mutton</td><td>180</td></tr>
+          <tr><td>Mutton Kalimirch</td><td>180</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Snacks -->
+    <div class="tab-content" id="snacks">
+      <table class="menu-table">
+        <thead><tr><th>Snack</th><th>Price (₹)</th></tr></thead>
+        <tbody>
+          <tr><td>Dahi Bara Alu Dum</td><td>35</td></tr>
+          <tr><td>Alu Chaat</td><td>35</td></tr>
+          <tr><td>Samosa Chat</td><td>35</td></tr>
+          <tr><td>Bara (2 pcs) Ghuguni</td><td>35</td></tr>
+          <tr><td>Alu Chop (2 pcs) Ghuguni</td><td>25</td></tr>
+          <tr><td>Salad Receipts Singeda (2 pcs) Ghuguni</td><td>30</td></tr>
+          <tr><td>Kachodi (2 pcs) Ghuguni</td><td>30</td></tr>
+          <tr><td>Piaaji (2 pcs) Ghuguni</td><td>25</td></tr>
+          <tr><td>Veg Chop (2 pcs) Ghuguni</td><td>35</td></tr>
+          <tr><td>Bread Chop Ghuguni</td><td>20</td></tr>
+          <tr><td>Pakadi</td><td>30</td></tr>
+          <tr><td>Kakera</td><td>12</td></tr>
+          <tr><td>Egg Roll</td><td>60</td></tr>
+          <tr><td>Chicken Egg Roll</td><td>70</td></tr>
+          <tr><td>Egg Chowmein</td><td>70</td></tr>
+          <tr><td>Chicken Egg Chowmein</td><td>80</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Dry Snacks -->
+    <div class="tab-content" id="dry">
+      <table class="menu-table">
+        <thead><tr><th>Dry Snack</th><th>Price (₹)</th><th>Quantity</th></tr></thead>
+        <tbody>
+          <tr><td>Mixture‑Spicy</td><td>60</td><td>300 gms</td></tr>
+          <tr><td>Mixture‑Khatta Meetha</td><td>60</td><td>300 gms</td></tr>
+          <tr><td>Nimki</td><td>50</td><td>200 gms</td></tr>
+          <tr><td>Thikiri (Chhota Nimki)</td><td>50</td><td>300 gms</td></tr>
+          <tr><td>Sev</td><td>50</td><td>200 gms</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kalingas Restaurant. All rights reserved.</p>
+  </footer>
+
+  <!-- Mobile navigation script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleBtn = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav');
+      if (toggleBtn && nav) {
+        toggleBtn.addEventListener('click', function() {
+          nav.classList.toggle('open');
+        });
+        // Close the drawer when a navigation link is clicked
+        nav.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            nav.classList.remove('open');
+          });
+        });
+        // Close button inside the drawer
+        const closeBtn = document.querySelector('.close-nav');
+        if (closeBtn) {
+          closeBtn.addEventListener('click', function() {
+            nav.classList.remove('open');
+          });
+        }
+      }
+    });
+  </script>
+
+  <script>
+    // Simple tab functionality
+    const tabs = document.querySelectorAll('.tab');
+    const contents = document.querySelectorAll('.tab-content');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // remove active states
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+        // activate current
+        tab.classList.add('active');
+        const target = document.getElementById(tab.dataset.tab);
+        target.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

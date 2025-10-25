@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Kalingas Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="branding">
+        <img src="images/new-logo.png" alt="Kalingas logo" class="logo" />
+        <span class="tagline">The Taste of Odisha</span>
+      </div>
+      <div class="contact-number">Contact: 080‑42038180</div>
+      <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav>
+        <!-- Close button appears on mobile to close the drawer -->
+        <button class="close-nav" aria-label="Close navigation">&times;</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html">Order&nbsp;Online</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" style="background-image: url('images/rg.jpg');">
+    <div class="hero-content">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="grid grid-2">
+      <div>
+        <h3>Find Us Here</h3>
+        <!-- Google Maps embed (public) -->
+        <iframe
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA5-n0i*QYYYYYYYYYYYYY&zoom=15&q=16th+Main+Road+BTM+Layout+Bangalore" 
+          width="100%" height="300" style="border:0" allowfullscreen="" loading="lazy"></iframe>
+        <h3>Contact Details</h3>
+        <p><strong>Kalingas Restaurant</strong><br />
+          #399, 16th Main, II Stage<br />
+          BTM Layout, Bangalore‑560076
+        </p>
+        <p><strong>Phone:</strong> 080‑42038180<br />
+           <strong>Email:</strong> <a href="mailto:info@kaligas.in">info@kaligas.in</a>
+        </p>
+        <p>Follow us on <a href="#">Facebook</a> and <a href="#">Twitter</a>.</p>
+      </div>
+      <div>
+        <h3>Send Us a Message</h3>
+        <form>
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="E‑mail" required />
+          <input type="tel" name="mobile" placeholder="Mobile" required />
+          <input type="text" name="subject" placeholder="Subject" required />
+          <textarea name="message" placeholder="Message" rows="4" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kalingas Restaurant. All rights reserved.</p>
+  </footer>
+
+  <!-- Mobile navigation script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleBtn = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav');
+      if (toggleBtn && nav) {
+        toggleBtn.addEventListener('click', function() {
+          nav.classList.toggle('open');
+        });
+        // Close the drawer when a navigation link is clicked
+        nav.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            nav.classList.remove('open');
+          });
+        });
+        // Close button inside the drawer
+        const closeBtn = document.querySelector('.close-nav');
+        if (closeBtn) {
+          closeBtn.addEventListener('click', function() {
+            nav.classList.remove('open');
+          });
+        }
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services – Kalingas Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="branding">
+        <img src="images/new-logo.png" alt="Kalingas logo" class="logo" />
+        <span class="tagline">The Taste of Odisha</span>
+      </div>
+      <div class="contact-number">Contact: 080‑42038180</div>
+      <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav>
+        <!-- Close button appears on mobile to close the drawer -->
+        <button class="close-nav" aria-label="Close navigation">&times;</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html">Order&nbsp;Online</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="hero" style="background-image: url('images/services.jpg');">
+    <div class="hero-content">
+      <h2>Our Services</h2>
+      <p>We deliver flavours and experiences</p>
+    </div>
+  </section>
+
+  <section>
+    <h3>Home Delivery</h3>
+    <p>Craving authentic Odia food at home?  Our dedicated delivery team will bring your favourite dishes straight to your door.  We offer **free delivery within a 2 km radius** of our restaurant, with no minimum order charge.  Enjoy restaurant‑quality food in the comfort of your own home.</p>
+    <h3>Corporate &amp; Party Orders</h3>
+    <p>Planning a celebration or corporate event?  Let Kalingas cater your special occasion with our bespoke menus.  We undertake bulk orders for birthdays, house‑warming ceremonies, office lunches and more.  Contact us to discuss menu options, delivery times and customised packages.</p>
+    <h3>Operating Hours</h3>
+    <p>We are open daily from <strong>7 AM to 11 PM</strong>.  Delivery services are available during these hours.  For large or corporate orders, please provide at least 24 hours’ notice.</p>
+    <p><a href="order.html" class="btn">Place an Order</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kalingas Restaurant. All rights reserved.</p>
+  </footer>
+
+  <!-- Mobile navigation script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleBtn = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav');
+      if (toggleBtn && nav) {
+        toggleBtn.addEventListener('click', function() {
+          nav.classList.toggle('open');
+        });
+        // Close the drawer when a navigation link is clicked
+        nav.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            nav.classList.remove('open');
+          });
+        });
+        // Close button inside the drawer
+        const closeBtn = document.querySelector('.close-nav');
+        if (closeBtn) {
+          closeBtn.addEventListener('click', function() {
+            nav.classList.remove('open');
+          });
+        }
+      }
+    });
+  </script>
+</body>
+</html>

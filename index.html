@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalingas Restaurant – Authentic Odia Cuisine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="branding">
+        <img src="images/new-logo.png" alt="Kalingas logo" class="logo" />
+        <span class="tagline">The Taste of Odisha</span>
+      </div>
+      <div class="contact-number">Contact: 080‑42038180</div>
+      <!-- Mobile menu toggle -->
+      <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav>
+        <!-- Close button appears on mobile to close the drawer -->
+        <button class="close-nav" aria-label="Close navigation">&times;</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html">Order&nbsp;Online</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section with image slider -->
+  <section class="hero">
+    <div class="hero-slider">
+      <img src="images/banner/banner-6.jpg" alt="Sweet rasagola">
+      <img src="images/banner/banner-5.jpg" alt="Brown rasagola in syrup">
+      <img src="images/banner/banner-2.jpg" alt="Chhena poda cake">
+      <img src="images/banner/banner-1.jpg" alt="Odia curry dish">
+      <img src="images/banner/banner-3.jpg" alt="Odia snacks and curry">
+    </div>
+    <div class="hero-content">
+      <h2>With that wonderful feeling of home cooked meals</h2>
+      <p>Experience authentic Odia cuisine since 2009 &ndash; Bengaluru</p>
+      <a href="menu.html" class="btn">View Menu</a>
+      <a href="order.html" class="btn">Order Online</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h3>‘KALINGA’ &ndash; Scenic beauty meets divine food</h3>
+    <div class="grid grid-2">
+      <div>
+        <p>A region whose reputation for scenic beauty and great hospitality is probably surpassed by one thing &ndash; divine food. A milestone in Bengaluru’s dining landscape, <strong>Kalingas</strong> brings the simple, subtle yet spicy culinary tradition of Odisha to the city.</p>
+        <p>Traditionally handed down from mother to daughter from one generation to the next, Odia cuisine is truly a labour of love. Join us for an unforgettable culinary journey that celebrates heritage, flavour and authenticity.</p>
+      </div>
+      <div>
+        <!-- Showcase a traditional Odia thali in the about section -->
+        <img src="images/300h2.jpg" alt="Traditional Odia thali" style="width:100%; border-radius:8px;" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights Section: combine our signature offerings into a modern card grid -->
+  <section id="highlights" class="features-grid">
+    <!-- Thali card -->
+    <div class="feature-card">
+      <img src="images/kheer-2.jpg" alt="Kalingas Thali">
+      <div class="card-content">
+        <h4>Kalingas reinvents the ‘Thali’</h4>
+        <p>Available during lunch and dinner, the Kalingas’ Thali is created to give an authentic culinary experience of a traditional Odia meal. Enjoy a balance of flavours, textures and aromas served in a single platter.</p>
+        <p><a href="menu.html#thali" class="btn small">Reserve Your Thali</a></p>
+      </div>
+    </div>
+    <!-- A la carte card -->
+    <div class="feature-card">
+      <img src="images/pic3.jpg" alt="Chhena Podo and desserts">
+      <div class="card-content">
+        <h4>À&nbsp;la&nbsp;Carte&nbsp;Dishes</h4>
+        <p>From fiery <strong>Maachha‑Besara</strong> and <strong>Kashaa‑Maansha</strong> as part of our main course to the sublime <strong>Chhenaa&nbsp;Podo</strong> and <strong>Rabidi</strong> desserts, <strong>Kalingas</strong> is the closest you’ll get to Odisha while living in Bengaluru.</p>
+        <p><a href="menu.html#sweets" class="btn small">Discover More</a></p>
+      </div>
+    </div>
+    <!-- Snacks card -->
+    <div class="feature-card">
+      <img src="images/veg-2.jpg" alt="Odia snacks">
+      <div class="card-content">
+        <h4>Snacks&nbsp;&amp;&nbsp;Street&nbsp;Favourites</h4>
+        <p>The snacks section offers a variety of authentic Odia snacks ranging from the mouth‑watering <strong>Dahibara Alu Dum</strong> and <strong>Kata Alu Singeda‑Ghuguni</strong> to our very own Odia <strong>Alu Chaat</strong>. Perfect for any time of day &ndash; drop by or order a quick bite.</p>
+      </div>
+    </div>
+    <!-- Honest food card -->
+    <div class="feature-card">
+      <img src="images/rg.jpg" alt="Rasgola in syrup">
+      <div class="card-content">
+        <h4>Honest Food</h4>
+        <p><strong>Food as it should be:</strong> Kalingas’ focus is clear – honest food. Authentic. Great quality. Without the obligatory high price! Using less oil, coconut milk, rich curd and <em>pancha‑phutana</em>, our cuisine is slow cooked for maximum succulence and zing.</p>
+      </div>
+    </div>
+    <!-- Culinary journey card -->
+    <div class="feature-card">
+      <img src="images/veg-1.jpg" alt="Odia curry dish">
+      <div class="card-content">
+        <h4>Culinary Journey</h4>
+        <p>We are open from <strong>7 AM&nbsp;to&nbsp;11 PM</strong> every day. We take great pleasure in inviting you to take this culinary journey with us as we serve hearty meals and warm hospitality all day long.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Kalingas Restaurant. All rights reserved.</p>
+  </footer>
+
+  <!-- Mobile navigation script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleBtn = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav');
+      if (toggleBtn && nav) {
+        toggleBtn.addEventListener('click', function() {
+          nav.classList.toggle('open');
+        });
+        // Close the drawer when a navigation link is clicked
+        nav.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            nav.classList.remove('open');
+          });
+        });
+        // Close button inside the drawer
+        const closeBtn = document.querySelector('.close-nav');
+        if (closeBtn) {
+          closeBtn.addEventListener('click', function() {
+            nav.classList.remove('open');
+          });
+        }
+      }
+    });
+  </script>
+</body>
+</html>
